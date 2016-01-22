@@ -1,0 +1,27 @@
+
+
+.slider-wraper {
+	width: 100%; height: 33.33vw; background: #fff; position: relative; overflow: hidden;
+}
+.slider-content {
+	font-size: 0; height: 100%; white-space: nowrap; position: relative;
+}
+.slider-item {
+	display: inline-block; font-size: 1rem;
+}
+.slider-item,
+.slider-item img {
+	width: 100%; height: 100%;
+}
+.slider-control {
+	width: 100%; text-align: center; position: absolute; bottom: 9px; left: 0px; box-sizing: border-box;
+}
+.slider-control em {
+	display: inline-block; width: 6px; height: 6px; margin: 0 4px; background: rgba(205, 205, 205, 0.8); border-radius: 50%;
+}
+.slider-control em.current {
+	background: rgb(255, 255, 255);
+}
+.slider-wraper-loading {
+	background: url(loading.gif) no-repeat center center; background-size: 50px auto;
+}

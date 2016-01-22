@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TouchSlider</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<style>
+		* { padding: 0; margin: 0;}
+	</style>
+	<link rel="stylesheet" href="src/slider.css">
+	<script src="lib/jquery.js"></script>
+	<script src="src/slider.js"></script>
+</head>
+<body>
+	<div id="sliderWrapper" class="slider-wraper slider-wraper-loading">
+		<div id="sliderContent" class="slider-content">
+			<a class="slider-item" href="javascript:;">
+				<img src="imgs/1.jpg">
+			</a>
+			<a class="slider-item" href="javascript:;">
+				<img src="imgs/2.jpg">
+			</a>
+			<a class="slider-item" href="javascript:;">
+				<img src="imgs/3.jpg">
+			</a>
+			<a class="slider-item" href="javascript:;">
+				<img src="imgs/4.jpg">
+			</a>
+			<a class="slider-item" href="javascript:;">
+				<img src="imgs/5.jpg">
+			</a>
+		</div>
+		<div id="sliderControl" class="slider-control"></div>
+	</div>
+
+	<script>
+	new Slider({
+		// conversion: 0.333,		// 宽高比 wraperHeight = wraperWidth * conversion;
+		// current: 1,				// 初始图片位置
+		// speed: 300				// 动画切换速度
+	});
+	</script>
+</body>
+</html>
